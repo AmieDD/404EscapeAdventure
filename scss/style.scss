@@ -1,0 +1,83 @@
+$screen-background:#121010;
+$help-color:#00ff00 ;
+$danger-color: #ff123e;
+$look-color: #E1D728;
+
+html,body {
+  background-color: $screen-background;
+  color: #FFF;
+  font-family: 'Source Code Pro';
+  padding: 10px;
+  font-size: 0.9em;
+}
+p {
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.green {
+  color: $help-color;
+}
+.red {
+  color: $danger-color;
+}
+.yellow {
+  color: $look-color;
+}
+.blinking-cursor {
+  font-weight: 100;
+  color: #FFF;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+.blinking-cursor:after {
+  content: "|";
+}
+
+@keyframes blink {
+  from, to {
+    color: #121212;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: #121212;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: #121212;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
